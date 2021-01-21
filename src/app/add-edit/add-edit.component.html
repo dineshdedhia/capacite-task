@@ -1,0 +1,60 @@
+<h1 style="text-align:center">Add Edit</h1>
+
+<section style="text-align:center">
+    <a routerLink="/home" routerLinkActive="active"><button mat-raised-button color="primary">Home</button></a>
+</section>
+<br>
+
+<br>
+
+<section style="text-align:center">
+ <p>
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Placeholder">
+    </mat-form-field>
+ </p>
+ <p>
+    <mat-form-field appearance="outline">
+        <mat-label>Age</mat-label>
+        <input matInput placeholder="Placeholder">
+      </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Placeholder">
+      </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill">
+        <mat-label>Date of Join</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Designation</mat-label>
+      <select matNativeControl required>
+        <option value="">CEO</option>
+        <option value="">Developer</option>
+      </select>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Depeartment</mat-label>
+      <select matNativeControl required>
+        <option value="">IT</option>
+        <option value="">Management</option>
+      </select>
+    </mat-form-field>
+  </p>
+
+  <section style="text-align:center">
+    <a routerLink="/home" routerLinkActive="active"><button mat-raised-button color="primary">Submit</button></a> &nbsp;
+    <a routerLink="" routerLinkActive=""><button mat-raised-button color="warn">Cancel</button></a>
+</section>
+</section>
